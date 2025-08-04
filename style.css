@@ -9,9 +9,20 @@ body{
     color: white !important;
 }
 
+    /* NAVBAR */
+
 .bi-house-fill{
     color: white;
     transition: color 0.3s ease;
+}
+
+.bi-person-fill{
+    position: relative;
+    bottom: 3px;
+    margin-left: 15px;
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 23px;
 }
 
 .bi-folder-fill{
@@ -45,19 +56,18 @@ body{
     transition: color 0.3s ease;
 }
 
-.bi-house-fill:hover,.bi-folder-fill:hover,.bi-tools:hover,.bi-card-checklist:hover,.bi-person-lines-fill:hover{
+.bi:hover{
     color: #4881e3 !important;
 }
 
 .nav-link.active i{
-    color: rgb(255, 0, 0);
+    color: red;
 }
 
 .navbar{
     transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.134);
     backdrop-filter: blur(50px);
-    width: 25%;
     height: 40px;
     margin-bottom: 20px;
     display: flex;
@@ -66,4 +76,74 @@ body{
     z-index: 999;
 }
 
+    /* home-content */
 
+
+.main-content{
+    padding-top: 200px;
+}
+
+#about,#projects,#skills,#experience,#contact {
+    padding-top: 50px;
+}
+
+.intro-content{
+    padding-bottom: 122px;
+}
+
+.intro-title{
+    animation: fadeInDown1 2s ease;
+    
+}
+
+.intro-subtitle{
+    animation: fadeInDown2 4s ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation-delay: 1s; */
+}
+
+@keyframes fadeInDown1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0) scale(.9);
+    }
+}
+
+@keyframes fadeInDown2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    75% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+.dp{
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+    max-height: 330px;
+    width: 350px;
+}
+
+.intro {
+    position: relative;
+}
