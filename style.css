@@ -9,6 +9,22 @@ body{
     color: white !important;
 }
 
+.head{
+    position: relative; /* Parent element needs relative positioning */
+    display: inline-block
+}
+
+.head::after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background: red;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
     /* NAVBAR */
 
 .bi-house-fill{
@@ -56,7 +72,7 @@ body{
     transition: color 0.3s ease;
 }
 
-.bi:hover{
+.nav-icon:hover{
     color: #4881e3 !important;
 }
 
@@ -146,4 +162,46 @@ body{
 
 .intro {
     position: relative;
+}
+
+/* Contact Content */
+
+.contact-head{
+    font-size: 50px;
+}
+
+.contact-form{
+    margin-top: 50px;
+}
+
+.contact-form button:hover{
+    transform: translateY(-1px)
+}
+
+.contact-info{
+    margin-top: 50px;
+    color: #e3e2e2;
+
+}
+
+.form-control{
+    background: rgba(255, 255, 255, 0.134) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.form-control:focus{
+    border: 1px solid blue !important;
+}
+
+::placeholder{
+    color: rgb(0, 0, 0) !important;
+}
+
+textarea{
+    height: 130px;
+}
+
+.social-icons a i:hover{
+    color: red !important;
 }
