@@ -191,7 +191,7 @@ body{
 }
 
 .form-control:focus{
-    border: 1px solid blue !important;
+    border: 1px solid white !important;
 }
 
 ::placeholder{
@@ -203,5 +203,12 @@ textarea{
 }
 
 .social-icons a i:hover{
-    color: red !important;
+    color: white !important;
+}
+
+/* Experience */
+
+.card{
+    background: rgba(255, 255, 255, 0.134) !important;
+
 }
